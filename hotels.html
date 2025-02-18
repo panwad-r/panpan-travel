@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panpan Travel - โรงแรม</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="header">Panpan Travel</div>
+    <div class="nav">
+        <a href="index.html">หน้าหลัก</a>
+        <a href="flights.html">เที่ยวบิน</a>
+        <a href="hotels.html">โรงแรม</a>
+        <a href="deals.html">โปรโมชั่น</a>
+        <a href="contact.html">ติดต่อเรา</a>
+    </div>
+
+    <div class="content">
+        <h1>จองโรงแรมของคุณ</h1>
+        <form action="#" method="post">
+            <label for="destination">จุดหมายปลายทาง:</label>
+            <input type="text" id="destination" name="destination" required>
+
+            <label for="checkin">วันที่เช็คอิน:</label>
+            <input type="date" id="checkin" name="checkin" required>
+
+            <label for="checkout">วันที่เช็คเอาท์:</label>
+            <input type="date" id="checkout" name="checkout" required>
+
+            <label for="guests">จำนวนผู้เข้าพัก:</label>
+            <input type="number" id="guests" name="guests" min="1" required>
+
+            <label for="room">ประเภทห้องพัก:</label>
+            <select id="room" name="room">
+                <option value="standard">มาตรฐาน</option>
+                <option value="deluxe">ดีลักซ์</option>
+                <option value="suite">สวีท</option>
+            </select>
+
+            <button type="submit">จองตอนนี้</button>
+        <button onclick="location.href='payment.html'">ไปหน้าชำระเงิน</button></form>
+    </div>
+</body>
+</html>
